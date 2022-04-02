@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wordle", "Wordle\Wordle.csproj", "{99FFBF16-7B7C-4690-9857-530FB8AA9A1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleCLI", "WordleCLI\WordleCLI.csproj", "{F91CECB6-03ED-40F7-87A0-D9B422809468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleTestProject", "WordleTestProject\WordleTestProject.csproj", "{5D296540-BA56-41B2-8F05-6D673205928E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99FFBF16-7B7C-4690-9857-530FB8AA9A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FFBF16-7B7C-4690-9857-530FB8AA9A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FFBF16-7B7C-4690-9857-530FB8AA9A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FFBF16-7B7C-4690-9857-530FB8AA9A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F91CECB6-03ED-40F7-87A0-D9B422809468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F91CECB6-03ED-40F7-87A0-D9B422809468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F91CECB6-03ED-40F7-87A0-D9B422809468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F91CECB6-03ED-40F7-87A0-D9B422809468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D296540-BA56-41B2-8F05-6D673205928E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D296540-BA56-41B2-8F05-6D673205928E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D296540-BA56-41B2-8F05-6D673205928E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D296540-BA56-41B2-8F05-6D673205928E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07CB7E65-81AA-4E9C-AEBF-4243B4CB7513}
+	EndGlobalSection
+EndGlobal
