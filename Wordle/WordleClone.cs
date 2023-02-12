@@ -50,7 +50,7 @@ namespace Wordle
             guess = guess.ToLower();
 
             if (string.IsNullOrEmpty(guess) || guess.Length != 5 || !Words.Contains(guess))
-                return false; //Word is not valid
+                return false; //Word is not valid;
             else if (guess == _word)
                 return true;
 
@@ -78,25 +78,24 @@ namespace Wordle
             if (letter == chars[index])
             {
                 accuracy = Accuracy.Correct;
-                chars[index] = '~';
             }
             else if (chars.Contains(letter))
             {
-                string tmp = new string(chars);
-                var indexes = AllIndexesOf(tmp, letter);
+                
+                var actual = new string(chars);
+                var indicesActual = AllIndexesOf(actual, letter);
+                var indicesGuess = AllIndexesOf(guess, letter);
 
-                int count = 0;
-                foreach (var i in indexes)
-                {
-                    if (guess[i] == tmp[i])
-                        count++;
-                }
+                var indicesCorrect = indicesActual.Intersect(indicesGuess);
+                var guessable = indicesActual.Except(indicesCorrect).ToList();
+                var guessed = indicesGuess.Where(x => x < index).Except(indicesCorrect).ToList();
 
-                if (count != indexes.Count)
+                var unguessedClose = guessable.Count - guessed.Count;
+                if (unguessedClose > 0)
                 {
                     accuracy = Accuracy.Close;
-                    chars[index] = '~';
                 }
+                
             }
             //else not valid
 

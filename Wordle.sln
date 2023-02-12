@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wordle", "Wordle\Wordle.csproj", "{99FFBF16-7B7C-4690-9857-530FB8AA9A1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wordle", "Wordle\Wordle.csproj", "{99FFBF16-7B7C-4690-9857-530FB8AA9A1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleCLI", "WordleCLI\WordleCLI.csproj", "{F91CECB6-03ED-40F7-87A0-D9B422809468}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordleCLI", "WordleCLI\WordleCLI.csproj", "{F91CECB6-03ED-40F7-87A0-D9B422809468}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordleTestProject", "WordleTestProject\WordleTestProject.csproj", "{5D296540-BA56-41B2-8F05-6D673205928E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordleTestProject", "WordleTestProject\WordleTestProject.csproj", "{5D296540-BA56-41B2-8F05-6D673205928E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

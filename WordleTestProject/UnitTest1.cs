@@ -5,17 +5,24 @@ namespace WordleTestProject
 {
     public class Tests
     {
-        [SetUp]
+        /*[SetUp]
         public void Setup()
         {
+        }*/
+
+        [TestCase("abbey", "abbey")]
+        [TestCase("tower", "tower")]
+        public void WordleGuess_Success(string word, string guess)
+        {
+            var wordle = new WordleClone(word);
+
+            Assert.IsTrue(wordle.GuessWord(guess));
+
         }
 
         [Test]
-        public void Test1()
+        public void WordleGuess_Fail()
         {
-            WordleClone wordle = new WordleClone("tower");
-
-            wordle.GuessWord("flees");
 
         }
     }
