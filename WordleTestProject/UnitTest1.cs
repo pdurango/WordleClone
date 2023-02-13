@@ -10,13 +10,13 @@ namespace WordleTestProject
         {
         }
 
-        [Test]
-        public void Test1()
+        [TestCase("abbey", "abbey")]
+        [TestCase("tower", "tower")]
+        public void WordleGuess_Success(string word, string guess)
         {
-            WordleClone wordle = new WordleClone("tower");
+            var wordle = new WordleClone(word);
 
-            wordle.GuessWord("flees");
-
+            Assert.IsTrue(wordle.GuessWord(guess));
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Worlde
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Worlde.");
-            WordleClone wordle = new WordleClone("tower");
+            WordleClone wordle = new WordleClone();
             bool winnerwinner = false;
 
             int i = 0;
@@ -44,10 +44,10 @@ namespace Worlde
                             Console.ForegroundColor = ConsoleColor.Green;
                             break;
                         case Accuracy.Close:
-                            Console.ForegroundColor = ConsoleColor.DarkYellow;
+                            Console.ForegroundColor = ConsoleColor.Yellow;
                             break;
                         case Accuracy.Invalid:
-                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.ForegroundColor = ConsoleColor.DarkRed;
                             break;
                     }
 
