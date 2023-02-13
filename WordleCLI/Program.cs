@@ -8,7 +8,7 @@ namespace Worlde
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Worlde.");
-            WordleClone wordle = new WordleClone("abbey");
+            WordleClone wordle = new WordleClone();
             bool winnerwinner = false;
 
             int i = 0;

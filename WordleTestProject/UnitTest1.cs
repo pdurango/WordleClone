@@ -5,10 +5,10 @@ namespace WordleTestProject
 {
     public class Tests
     {
-        /*[SetUp]
+        [SetUp]
         public void Setup()
         {
-        }*/
+        }
 
         [TestCase("abbey", "abbey")]
         [TestCase("tower", "tower")]
@@ -17,13 +17,6 @@ namespace WordleTestProject
             var wordle = new WordleClone(word);
 
             Assert.IsTrue(wordle.GuessWord(guess));
-
-        }
-
-        [Test]
-        public void WordleGuess_Fail()
-        {
-
         }
     }
 }
